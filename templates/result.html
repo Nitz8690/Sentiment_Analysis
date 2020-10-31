@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Sensitive Analysis Result
+		</div>
+
+	</div>
+	</header>
+
+
+
+	<div class="results" style="text-align: center;">
+
+<!--	<h2>Twitter sensitivity detector</h2><br>-->
+	<br>
+	<p style="color:blue;font-size:30px;text-align: center;"><b>Results of your Comment</b></p><br>
+
+	{% if prediction == 1%}
+	<h2 style="color:red;">It is a Negative Comment</h2>
+	{% elif prediction == 0%}
+	<h2 style="color:green;">It is a Positive Comment</h2>
+	{% endif %}
+		<br>
+
+	</div>
+	
+	<a href=".." style="text-align: center;">
+	<input type="submit" style="margin-inline-start: 47%;" value="Go Back..">
+	</a>
+
+</body>
+</html>
