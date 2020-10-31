@@ -1,6 +1,13 @@
 # Deployement-of-NLP-Model
 Deployment of NLP Sensitive Analysis use Case with the help of flask, Jenkins and docker.
 
+FrameWork: Flask
+Language: Python
+Tools: Jenkins, Docker
+Libraries: sklearn, Pandas, NumPy, NLTK, Flask
+Model: LogisticRegression
+IDE: PyCharm
+
 <h2> Default_Page</h2>
 
 ![Default page](https://user-images.githubusercontent.com/58256205/97783504-8b3de380-1b98-11eb-9455-cfb110ea475e.PNG)
